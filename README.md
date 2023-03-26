@@ -219,4 +219,24 @@ zstd                      1.5.2                h19a0ad4_0    defaults
 - FileNotFoundError: [Errno 2] No such file or directory: 'DUMMY/LJ041-0048.wav'
 - RuntimeError: CUDA out of memory. Tried to allocate 2.00 MiB (GPU 0; 3.00 GiB total capacity; 1.81 GiB already allocated; 1.91 MiB free; 1.86 GiB reserved in total by PyTorch)
 - BrokenPipeError: [Errno 32] Broken pipe
+
+记录
+
+- conda install -c conda-forge nvidia-apex
+- conda install matplotlib
+- conda install -c conda-forge numpy
+- conda install -c "conda-forge/label/cf201901" librosa
+- conda install -c conda-forge inflect
+- conda install scipy
+- conda install Unidecode
+
+记录1
+
+- conda create --name tf1.15_py3.7 python=3.7
+- conda activate tf1.15_py3.7
+- conda install tensorflow-gpu=1.15.0 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ 
+- pip uninstall tensorflow-estimator
+- conda install tensorflow-estimator=1.15.1 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+- conda install tensorboard==1.15.0 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+- pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
   
